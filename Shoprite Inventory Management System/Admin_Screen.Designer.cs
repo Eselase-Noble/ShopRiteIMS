@@ -46,15 +46,15 @@
             this.categoryPanel = new System.Windows.Forms.Panel();
             this.catDataGridView = new System.Windows.Forms.DataGridView();
             this.button8 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.productPanel = new System.Windows.Forms.Panel();
             this.productDataGridView = new System.Windows.Forms.DataGridView();
             this.catAddButton = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.accountPanel = new System.Windows.Forms.Panel();
             this.accountDataGridView = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
@@ -194,12 +194,12 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.accountPanel);
             this.panel2.Controls.Add(this.dashboardpanel);
             this.panel2.Controls.Add(this.categoryPanel);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.productPanel);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.accountPanel);
             this.panel2.Location = new System.Drawing.Point(139, 96);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(881, 475);
@@ -245,6 +245,14 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.catbuttonClick);
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.panel4.Location = new System.Drawing.Point(0, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(870, 448);
+            this.panel4.TabIndex = 7;
+            // 
             // productPanel
             // 
             this.productPanel.BackColor = System.Drawing.Color.Gainsboro;
@@ -277,6 +285,14 @@
             this.catAddButton.Text = "Add Product";
             this.catAddButton.UseVisualStyleBackColor = true;
             this.catAddButton.Click += new System.EventHandler(this.productButton);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Silver;
+            this.panel5.Location = new System.Drawing.Point(1, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(871, 456);
+            this.panel5.TabIndex = 6;
             // 
             // accountPanel
             // 
@@ -314,22 +330,6 @@
             this.mySqlCommandBuilder1.DataAdapter = null;
             this.mySqlCommandBuilder1.QuotePrefix = "`";
             this.mySqlCommandBuilder1.QuoteSuffix = "`";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.panel4.Location = new System.Drawing.Point(0, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(870, 448);
-            this.panel4.TabIndex = 7;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.IndianRed;
-            this.panel5.Location = new System.Drawing.Point(1, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(871, 456);
-            this.panel5.TabIndex = 6;
             // 
             // Admin_Screen
             // 
