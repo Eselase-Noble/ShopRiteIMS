@@ -888,7 +888,7 @@ namespace Shoprite_Inventory_Management_System
             if (e.ColumnIndex == 9)
             {
                 DataGridViewRow row = productDataGridView.Rows[e.RowIndex];
-                if (MessageBox.Show(string.Format("Do you want to Update Category ID: {0}?", row.Cells["Product_ID"].Value), "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show(string.Format("Do you want to Update Product ID: {0}?", row.Cells["Product_ID"].Value), "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     using (sqlConnection)
                     {

@@ -50,3 +50,17 @@ C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.csproj.CopyComplete
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.exe
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.pdb
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\BarcodeLib.Barcode.WinForms.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\BarcodeLib.BarcodeReader.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\BarcodeStandard.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\IronBarCode.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Drawing.Common.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Text.Encodings.Web.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Text.Json.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.ValueTuple.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\IronBarCode.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Text.Encodings.Web.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Text.Json.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.ValueTuple.xml

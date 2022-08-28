@@ -41,6 +41,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.productPanel = new System.Windows.Forms.Panel();
+            this.productDataGridView = new System.Windows.Forms.DataGridView();
+            this.catAddButton = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.accountPanel = new System.Windows.Forms.Panel();
             this.accountDataGridView = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
@@ -49,22 +53,18 @@
             this.catDataGridView = new System.Windows.Forms.DataGridView();
             this.button8 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.productPanel = new System.Windows.Forms.Panel();
-            this.productDataGridView = new System.Windows.Forms.DataGridView();
-            this.catAddButton = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.productPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
             this.accountPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accountDataGridView)).BeginInit();
             this.categoryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.catDataGridView)).BeginInit();
-            this.productPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -177,7 +177,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 11);
+            this.label1.Location = new System.Drawing.Point(91, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(495, 24);
             this.label1.TabIndex = 0;
@@ -195,6 +195,42 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(881, 475);
             this.panel2.TabIndex = 3;
+            // 
+            // productPanel
+            // 
+            this.productPanel.BackColor = System.Drawing.Color.Gainsboro;
+            this.productPanel.Controls.Add(this.productDataGridView);
+            this.productPanel.Controls.Add(this.catAddButton);
+            this.productPanel.Location = new System.Drawing.Point(0, 3);
+            this.productPanel.Name = "productPanel";
+            this.productPanel.Size = new System.Drawing.Size(870, 448);
+            this.productPanel.TabIndex = 1;
+            this.productPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // productDataGridView
+            // 
+            this.productDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.productDataGridView.Location = new System.Drawing.Point(14, 47);
+            this.productDataGridView.Name = "productDataGridView";
+            this.productDataGridView.Size = new System.Drawing.Size(858, 157);
+            this.productDataGridView.TabIndex = 5;
+            // 
+            // catAddButton
+            // 
+            this.catAddButton.Location = new System.Drawing.Point(14, 14);
+            this.catAddButton.Name = "catAddButton";
+            this.catAddButton.Size = new System.Drawing.Size(137, 23);
+            this.catAddButton.TabIndex = 4;
+            this.catAddButton.Text = "Add Product";
+            this.catAddButton.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Silver;
+            this.panel5.Location = new System.Drawing.Point(1, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(871, 456);
+            this.panel5.TabIndex = 6;
             // 
             // accountPanel
             // 
@@ -267,42 +303,6 @@
             this.panel4.Size = new System.Drawing.Size(870, 448);
             this.panel4.TabIndex = 7;
             // 
-            // productPanel
-            // 
-            this.productPanel.BackColor = System.Drawing.Color.Gainsboro;
-            this.productPanel.Controls.Add(this.productDataGridView);
-            this.productPanel.Controls.Add(this.catAddButton);
-            this.productPanel.Location = new System.Drawing.Point(0, 3);
-            this.productPanel.Name = "productPanel";
-            this.productPanel.Size = new System.Drawing.Size(870, 448);
-            this.productPanel.TabIndex = 1;
-            this.productPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // productDataGridView
-            // 
-            this.productDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productDataGridView.Location = new System.Drawing.Point(14, 47);
-            this.productDataGridView.Name = "productDataGridView";
-            this.productDataGridView.Size = new System.Drawing.Size(858, 157);
-            this.productDataGridView.TabIndex = 5;
-            // 
-            // catAddButton
-            // 
-            this.catAddButton.Location = new System.Drawing.Point(14, 14);
-            this.catAddButton.Name = "catAddButton";
-            this.catAddButton.Size = new System.Drawing.Size(137, 23);
-            this.catAddButton.TabIndex = 4;
-            this.catAddButton.Text = "Add Product";
-            this.catAddButton.UseVisualStyleBackColor = true;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(1, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(871, 456);
-            this.panel5.TabIndex = 6;
-            // 
             // mySqlCommandBuilder1
             // 
             this.mySqlCommandBuilder1.DataAdapter = null;
@@ -326,12 +326,12 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.productPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).EndInit();
             this.accountPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.accountDataGridView)).EndInit();
             this.categoryPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.catDataGridView)).EndInit();
-            this.productPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }

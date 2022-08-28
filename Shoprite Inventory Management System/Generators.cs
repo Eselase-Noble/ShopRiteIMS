@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 using BarcodeLib;
 using System.Drawing;
 using System.Drawing.Imaging;
+using BarcodeLib.BarcodeReader;
 
 namespace Shoprite_Inventory_Management_System
 {
     internal class Generators
     {
+
+
+
         public Generators()
         {
 
@@ -45,7 +49,7 @@ namespace Shoprite_Inventory_Management_System
 
         public string randomProductcode(int length)
         {
-            var chars = "AEIOU0123456789";
+            var chars = "0123456789";
             var productPassword = new char[length];
             var random = new Random();
 
@@ -58,9 +62,46 @@ namespace Shoprite_Inventory_Management_System
         }
 
 
-        public void barcodeGerator()
+        public void barcodeGenerator()
         {
+
             Barcode barcodelib = new Barcode();
+
+            int imgageHeight = 110;
+            int imageWidth = 250;
+
+            Color foreColor = Color.Black;
+            Color backColor = Color.Transparent;
+
+            //string alphaNumeric = string.Format("{0}",randomProductcode(10));
+            // string numeric = ""+randomProductcode(12)+"";
+            string numeric = "123456789012";
+
+            Image barcodeImage = barcodelib.Encode(TYPE.UPCA, numeric, foreColor, backColor, imageWidth, imgageHeight);
+
+            barcodeImage.Save(@"C:\Barcode-upca.png", ImageFormat.Png);
+            //barcodeImage.Save(string.Format(@"C:\{}",alphaNumeric), ImageFormat.Png);
+            //barcodeImage.Save(@"C:\"+numeric+".png", ImageFormat.Png);
+        }
+
+        public void barcodeReader()
+        {
+           // name = randomProductcode(12);
+           // string[] BarcodeUPCA = BarcodeReader.read(@"C:\"+name+".png", BarcodeReader.UPCA);
+            string[] BarcodeUPCA = BarcodeReader.read(@"C:\Barcode-upca.png", BarcodeReader.UPCA);
+            ConvertStringArrayToString(BarcodeUPCA);
+        }
+
+        static string ConvertStringArrayToString(string[] array)
+        {
+            // Concatenate all the elements into a StringBuilder.
+            StringBuilder builder = new StringBuilder();
+            foreach (string value in array)
+            {
+                builder.Append(value);
+
+            }
+            return builder.ToString();
         }
     }
 }

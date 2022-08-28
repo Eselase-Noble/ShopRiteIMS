@@ -43,6 +43,7 @@ namespace Shoprite_Inventory_Management_System
         public void productButtonClick(object sender, EventArgs e)
         {
             Generators generator = new Generators();
+            generator.barcodeGenerator();
             try
             {
                 const string connectionString = "server = localhost; Initial Catalog=inventorysystem;User id=root;Password=Eselase12/.;";
@@ -52,7 +53,7 @@ namespace Shoprite_Inventory_Management_System
                 string text = $"SELECT Product.*, Category.Category_Name FROM Product JOIN Category ON Category.Category_ID = Product.Category_ID;";
                 string name = $"Select Category_ID, Category_Name FROM Category INNER JOIN Product ON Category.Category_ID = Product.Category_ID";
                 string sqlStatement =
-                    $"INSERT INTO `Product`(`Product_Name`, `Selling_Price`,`Product_Code`, `Cost_Price`, `Quantity`, `Category_ID`, `PTotal_Sell`, `PTotal_Cost`) VALUES ('{nametextBox.Text}', {pricetextBox.Text}, '{generator.randomProductcode(5)}', {distextBox.Text},{quantityTextBox.Text}, {catComboBox.SelectedIndex + 1}, {(int.Parse(pricetextBox.Text)) * (int.Parse(quantityTextBox.Text))}, {(int.Parse(this.distextBox.Text)) * (int.Parse(quantityTextBox.Text))})";
+                    $"INSERT INTO `Product`(`Product_Name`, `Selling_Price`,`Product_Code`, `Cost_Price`, `Quantity`, `Category_ID`, `PTotal_Sell`, `PTotal_Cost`) VALUES ('{nametextBox.Text}', {pricetextBox.Text}, '{generator.barcodeReader(generator.randomProductcode(12))}', {distextBox.Text},{quantityTextBox.Text}, {catComboBox.SelectedIndex + 1}, {(int.Parse(pricetextBox.Text)) * (int.Parse(quantityTextBox.Text))}, {(int.Parse(this.distextBox.Text)) * (int.Parse(quantityTextBox.Text))})";
 
                 System.Console.WriteLine(sqlStatement);
 
