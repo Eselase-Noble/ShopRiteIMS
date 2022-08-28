@@ -92,7 +92,7 @@ namespace Shoprite_Inventory_Management_System
             ConvertStringArrayToString(BarcodeUPCA);
         }
 
-        static string ConvertStringArrayToString(string[] array)
+        public string ConvertStringArrayToString(string[] array)
         {
             // Concatenate all the elements into a StringBuilder.
             StringBuilder builder = new StringBuilder();
