@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using BarcodeLib.BarcodeReader;
+using BarcodeLib;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace Shoprite_Inventory_Management_System
 {
@@ -45,8 +48,31 @@ namespace Shoprite_Inventory_Management_System
         public void productButtonClick(object sender, EventArgs e)
         {
             Generators generator = new Generators();
-            generator.barcodeGenerator();
-            string[] BarcodeUPCA = BarcodeReader.read(@"C:\\Users\BrandedHustler\Barcode.png", BarcodeReader.UPCA);
+
+            Barcode barcodelib = new Barcode();
+
+            int imgageHeight = 110;
+            int imageWidth = 250;
+
+            Color foreColor = Color.Black;
+            Color backColor = Color.Transparent;
+
+            //string alphaNumeric = string.Format("{0}",randomProductcode(10));
+            string numeric = ""+generator.randomProductcode(12)+"";
+            ///string numer = randomProductcode(11);
+            //string numeric = "012345678901";
+
+            Image barcodeImage = barcodelib.Encode(TYPE.UPCA, numeric, foreColor, backColor, imageWidth, imgageHeight);
+
+            //barcodeImage.Save(@"C:\\Users\BrandedHustler\Barcode.png", ImageFormat.Png);
+            //barcodeImage.Save(string.Format(@"C:\{}",alphaNumeric), ImageFormat.Png);
+            barcodeImage.Save(@"C:\\Users\BrandedHustler\"+numeric+".png", ImageFormat.Png);
+
+
+            
+            //generator.randomProductcode(12);
+            //generator.barcodeGenerator();
+            string[] BarcodeUPCA = BarcodeReader.read(@"C:\\Users\BrandedHustler\"+numeric+".png", BarcodeReader.UPCA);
             MessageBox.Show(generator.ConvertStringArrayToString(BarcodeUPCA));
             try
             {
@@ -57,7 +83,7 @@ namespace Shoprite_Inventory_Management_System
                 string text = $"SELECT Product.*, Category.Category_Name FROM Product JOIN Category ON Category.Category_ID = Product.Category_ID;";
                 string name = $"Select Category_ID, Category_Name FROM Category INNER JOIN Product ON Category.Category_ID = Product.Category_ID";
                 string sqlStatement =
-                    $"INSERT INTO `Product`(`Product_Name`, `Selling_Price`,`Product_Code`, `Cost_Price`, `Quantity`, `Category_ID`, `PTotal_Sell`, `PTotal_Cost`) VALUES ('{nametextBox.Text}', {pricetextBox.Text}, '{generator.ConvertStringArrayToString(BarcodeUPCA)}', {distextBox.Text},{quantityTextBox.Text}, {catComboBox.SelectedIndex + 1}, {(int.Parse(pricetextBox.Text)) * (int.Parse(quantityTextBox.Text))}, {(int.Parse(this.distextBox.Text)) * (int.Parse(quantityTextBox.Text))})";
+                    $"INSERT INTO `Product`(`Product_Name`, `Selling_Price`,`Product_Code`, `Cost_Price`, `Quantity`, `Category_ID`, `PTotal_Sell`, `PTotal_Cost`) VALUES ('{nametextBox.Text}', {pricetextBox.Text}, '{numeric}', {distextBox.Text},{quantityTextBox.Text}, {catComboBox.SelectedIndex + 1}, {(int.Parse(pricetextBox.Text)) * (int.Parse(quantityTextBox.Text))}, {(int.Parse(this.distextBox.Text)) * (int.Parse(quantityTextBox.Text))})";
 
                 System.Console.WriteLine(sqlStatement);
 

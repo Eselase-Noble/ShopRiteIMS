@@ -77,14 +77,15 @@ namespace Shoprite_Inventory_Management_System
             Color backColor = Color.Transparent;
 
             //string alphaNumeric = string.Format("{0}",randomProductcode(10));
-            // string numeric = ""+randomProductcode(12)+"";
-            string numeric = "123456789012";
+             string numeric = ""+randomProductcode(12)+"";
+            ///string numer = randomProductcode(11);
+            //string numeric = "012345678901";
 
             Image barcodeImage = barcodelib.Encode(TYPE.UPCA, numeric, foreColor, backColor, imageWidth, imgageHeight);
 
-            barcodeImage.Save(@"C:\\Users\BrandedHustler\Barcode.png", ImageFormat.Png);
+            //barcodeImage.Save(@"C:\\Users\BrandedHustler\Barcode.png", ImageFormat.Png);
             //barcodeImage.Save(string.Format(@"C:\{}",alphaNumeric), ImageFormat.Png);
-            //barcodeImage.Save(@"C:\\"+numeric+".png", ImageFormat.Png);
+            barcodeImage.Save(@"C:\\Users\BrandedHustler\"+numeric+".png", ImageFormat.Png);
         }
 
         public void barcodeGenerators()
@@ -108,7 +109,7 @@ namespace Shoprite_Inventory_Management_System
         {
            // name = randomProductcode(12);
            // string[] BarcodeUPCA = BarcodeReader.read(@"C:\"+name+".png", BarcodeReader.UPCA);
-            string[] BarcodeUPCA = BarcodeReader.read(@"C\\User\BrandedHustler\Barcode.png", BarcodeReader.UPCA);
+            string[] BarcodeUPCA = BarcodeReader.read(@"C:\\Users\BrandedHustler\Barcode.png", BarcodeReader.UPCA);
             ConvertStringArrayToString(BarcodeUPCA);
         }
 
