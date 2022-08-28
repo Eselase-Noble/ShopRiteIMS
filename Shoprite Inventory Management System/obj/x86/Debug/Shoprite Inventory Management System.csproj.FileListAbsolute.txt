@@ -1,41 +1,7 @@
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Shoprite Inventory Management System.exe.config
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Shoprite Inventory Management System.exe
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Shoprite Inventory Management System.pdb
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\BouncyCastle.Crypto.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\EntityFramework.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\EntityFramework.SqlServer.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Google.Protobuf.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Compression.LZ4.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Compression.LZ4.Streams.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Hash.xxHash.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySql.Data.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySql.Data.EntityFramework.dll
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySqlConnector.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Buffers.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Memory.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Numerics.Vectors.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Ubiety.Dns.Core.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\ZstdNet.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\BouncyCastle.Crypto.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\EntityFramework.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\EntityFramework.SqlServer.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Google.Protobuf.pdb
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Google.Protobuf.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Compression.LZ4.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Compression.LZ4.Streams.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Hash.xxHash.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySql.Data.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySql.Data.EntityFramework.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySqlConnector.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Buffers.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Diagnostics.DiagnosticSource.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Memory.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Numerics.Vectors.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\IronBarCode.dll
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.csproj.AssemblyReference.cache
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.csproj.SuggestedBindingRedirects.cache
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite_Inventory_Management_System.AccountForm.resources
@@ -47,20 +13,54 @@ C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite_Inventory_Management_System.Screens.resources
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.csproj.GenerateResource.cache
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.csproj.CoreCompileInputs.cache
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.csproj.CopyComplete
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.exe
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.pdb
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Shoprite Inventory Management System.exe.config
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\BarcodeLib.Barcode.WinForms.dll
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\BarcodeLib.BarcodeReader.dll
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\BarcodeStandard.dll
-C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\IronBarCode.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\BouncyCastle.Crypto.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\EntityFramework.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\EntityFramework.SqlServer.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Google.Protobuf.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Compression.LZ4.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Hash.xxHash.dll
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySql.Data.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySql.Data.EntityFramework.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Buffers.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Drawing.Common.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Numerics.Vectors.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Text.Encodings.Web.dll
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Text.Json.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.ValueTuple.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Ubiety.Dns.Core.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\ZstdNet.dll
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\BouncyCastle.Crypto.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\EntityFramework.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\EntityFramework.SqlServer.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Google.Protobuf.pdb
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Google.Protobuf.xml
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\IronBarCode.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Compression.LZ4.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\K4os.Hash.xxHash.xml
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySql.Data.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySql.Data.EntityFramework.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\MySqlConnector.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Buffers.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Memory.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Numerics.Vectors.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Text.Encodings.Web.xml
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Text.Json.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\System.ValueTuple.xml
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.csproj.CopyComplete
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.exe
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\obj\x86\Debug\Shoprite Inventory Management System.pdb
+C:\Users\BrandedHustler\source\ShopRiteIMS\Shoprite Inventory Management System\bin\x86\Debug\Shoprite Inventory Management System.pdb

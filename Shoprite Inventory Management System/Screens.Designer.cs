@@ -47,7 +47,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(91, 223);
+            this.button1.Location = new System.Drawing.Point(117, 334);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(271, 223);
+            this.button2.Location = new System.Drawing.Point(305, 334);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
@@ -67,24 +67,24 @@
             // 
             // nametextBox
             // 
-            this.nametextBox.Location = new System.Drawing.Point(40, 73);
+            this.nametextBox.Location = new System.Drawing.Point(94, 67);
             this.nametextBox.Name = "nametextBox";
-            this.nametextBox.Size = new System.Drawing.Size(145, 20);
+            this.nametextBox.Size = new System.Drawing.Size(315, 20);
             this.nametextBox.TabIndex = 2;
             // 
             // pricetextBox
             // 
-            this.pricetextBox.Location = new System.Drawing.Point(271, 73);
+            this.pricetextBox.Location = new System.Drawing.Point(94, 170);
             this.pricetextBox.Name = "pricetextBox";
-            this.pricetextBox.Size = new System.Drawing.Size(160, 20);
+            this.pricetextBox.Size = new System.Drawing.Size(315, 20);
             this.pricetextBox.TabIndex = 3;
             // 
             // distextBox
             // 
-            this.distextBox.Location = new System.Drawing.Point(40, 120);
+            this.distextBox.Location = new System.Drawing.Point(94, 120);
             this.distextBox.Multiline = true;
             this.distextBox.Name = "distextBox";
-            this.distextBox.Size = new System.Drawing.Size(145, 21);
+            this.distextBox.Size = new System.Drawing.Size(315, 21);
             this.distextBox.TabIndex = 4;
             // 
             // label1
@@ -100,27 +100,30 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 55);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(23, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(36, 15);
             this.label2.TabIndex = 7;
             this.label2.Text = "Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(268, 55);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label3.Location = new System.Drawing.Point(23, 173);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(72, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Selling Price";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(37, 104);
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label4.Location = new System.Drawing.Point(23, 128);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.Size = new System.Drawing.Size(56, 15);
             this.label4.TabIndex = 9;
             this.label4.Text = "Cost Price";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -128,18 +131,19 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(268, 104);
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label5.Location = new System.Drawing.Point(23, 214);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.Size = new System.Drawing.Size(50, 15);
             this.label5.TabIndex = 10;
             this.label5.Text = "Category";
             // 
             // catComboBox
             // 
             this.catComboBox.FormattingEnabled = true;
-            this.catComboBox.Location = new System.Drawing.Point(271, 120);
+            this.catComboBox.Location = new System.Drawing.Point(94, 214);
             this.catComboBox.Name = "catComboBox";
-            this.catComboBox.Size = new System.Drawing.Size(160, 21);
+            this.catComboBox.Size = new System.Drawing.Size(315, 21);
             this.catComboBox.TabIndex = 11;
             this.catComboBox.SelectedIndexChanged += new System.EventHandler(this.catComboBox_SelectedIndexChanged_1);
             this.catComboBox.DropDownClosed += new System.EventHandler(this.catComboBox_SelectedIndexChanged_1);
@@ -149,17 +153,18 @@
             // 
             // quantityTextBox
             // 
-            this.quantityTextBox.Location = new System.Drawing.Point(271, 170);
+            this.quantityTextBox.Location = new System.Drawing.Point(94, 260);
             this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.Size = new System.Drawing.Size(160, 20);
+            this.quantityTextBox.Size = new System.Drawing.Size(315, 20);
             this.quantityTextBox.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(268, 154);
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label6.Location = new System.Drawing.Point(23, 267);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.Size = new System.Drawing.Size(44, 15);
             this.label6.TabIndex = 13;
             this.label6.Text = "Quatity";
             // 
@@ -179,9 +184,9 @@
             this.panel1.Controls.Add(this.pricetextBox);
             this.panel1.Controls.Add(this.distextBox);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(47, 56);
+            this.panel1.Location = new System.Drawing.Point(24, 22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(489, 298);
+            this.panel1.Size = new System.Drawing.Size(512, 402);
             this.panel1.TabIndex = 14;
             // 
             // Screens

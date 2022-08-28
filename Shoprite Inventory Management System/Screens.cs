@@ -38,15 +38,16 @@ namespace Shoprite_Inventory_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            this.Close();
         }
 
         public void productButtonClick(object sender, EventArgs e)
         {
             Generators generator = new Generators();
             generator.barcodeGenerator();
-            string[] BarcodeUPCA = BarcodeReader.read(@"C:\Barcode-upca.png", BarcodeReader.UPCA);
-            generator.ConvertStringArrayToString(BarcodeUPCA);
+            string[] BarcodeUPCA = BarcodeReader.read(@"C:\\Users\BrandedHustler\Barcode.png", BarcodeReader.UPCA);
+            MessageBox.Show(generator.ConvertStringArrayToString(BarcodeUPCA));
             try
             {
                 const string connectionString = "server = localhost; Initial Catalog=inventorysystem;User id=root;Password=Eselase12/.;";
