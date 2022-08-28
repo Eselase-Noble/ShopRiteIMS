@@ -52,7 +52,7 @@ namespace Shoprite_Inventory_Management_System
                 string text = $"SELECT Product.*, Category.Category_Name FROM Product JOIN Category ON Category.Category_ID = Product.Category_ID;";
                 string name = $"Select Category_ID, Category_Name FROM Category INNER JOIN Product ON Category.Category_ID = Product.Category_ID";
                 string sqlStatement =
-                    $"INSERT INTO `Product`(`Product_Name`, `Unit_Price`,`Product_Code`, `Discription`, `Quantity`, `Category_ID`) VALUES ('{nametextBox.Text}', '{pricetextBox.Text}', '{generator.randomProductcode(5)}', '{distextBox.Text}',{quantityTextBox.Text}, {catComboBox.SelectedIndex + 1})";
+                    $"INSERT INTO `Product`(`Product_Name`, `Selling_Price`,`Product_Code`, `Cost_Price`, `Quantity`, `Category_ID`, `PTotal_Sell`, `PTotal_Cost`) VALUES ('{nametextBox.Text}', {pricetextBox.Text}, '{generator.randomProductcode(5)}', {distextBox.Text},{quantityTextBox.Text}, {catComboBox.SelectedIndex + 1}, {(int.Parse(pricetextBox.Text)) * (int.Parse(quantityTextBox.Text))}, {(int.Parse(this.distextBox.Text)) * (int.Parse(quantityTextBox.Text))})";
 
                 System.Console.WriteLine(sqlStatement);
 
@@ -134,6 +134,11 @@ namespace Shoprite_Inventory_Management_System
                 catComboBox.Items.Add(reader.GetValue(1).ToString());
                 
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

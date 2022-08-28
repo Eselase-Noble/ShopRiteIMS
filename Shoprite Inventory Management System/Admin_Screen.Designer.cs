@@ -42,6 +42,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.accountPanel = new System.Windows.Forms.Panel();
+            this.accountDataGridView = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.dashboardpanel = new System.Windows.Forms.Panel();
             this.categoryPanel = new System.Windows.Forms.Panel();
             this.catDataGridView = new System.Windows.Forms.DataGridView();
@@ -51,21 +54,18 @@
             this.productDataGridView = new System.Windows.Forms.DataGridView();
             this.catAddButton = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.accountPanel = new System.Windows.Forms.Panel();
-            this.accountDataGridView = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.accountPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.accountDataGridView)).BeginInit();
             this.categoryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.catDataGridView)).BeginInit();
             this.productPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
-            this.accountPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.accountDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -194,16 +194,47 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.accountPanel);
             this.panel2.Controls.Add(this.dashboardpanel);
             this.panel2.Controls.Add(this.categoryPanel);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.productPanel);
             this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.accountPanel);
             this.panel2.Location = new System.Drawing.Point(139, 96);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(881, 475);
             this.panel2.TabIndex = 3;
+            // 
+            // accountPanel
+            // 
+            this.accountPanel.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.accountPanel.Controls.Add(this.accountDataGridView);
+            this.accountPanel.Controls.Add(this.button1);
+            this.accountPanel.Location = new System.Drawing.Point(2, 3);
+            this.accountPanel.Name = "accountPanel";
+            this.accountPanel.Size = new System.Drawing.Size(870, 448);
+            this.accountPanel.TabIndex = 6;
+            this.accountPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.accountPanel_Paint);
+            // 
+            // accountDataGridView
+            // 
+            this.accountDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.accountDataGridView.Location = new System.Drawing.Point(14, 47);
+            this.accountDataGridView.Name = "accountDataGridView";
+            this.accountDataGridView.Size = new System.Drawing.Size(854, 195);
+            this.accountDataGridView.TabIndex = 5;
+            this.accountDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.accountDataGridView_CellContentClick);
+            this.accountDataGridView.Click += new System.EventHandler(this.form);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(14, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Add Account";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.accountbuttonClick);
             // 
             // dashboardpanel
             // 
@@ -294,37 +325,6 @@
             this.panel5.Size = new System.Drawing.Size(871, 456);
             this.panel5.TabIndex = 6;
             // 
-            // accountPanel
-            // 
-            this.accountPanel.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.accountPanel.Controls.Add(this.accountDataGridView);
-            this.accountPanel.Controls.Add(this.button1);
-            this.accountPanel.Location = new System.Drawing.Point(2, 3);
-            this.accountPanel.Name = "accountPanel";
-            this.accountPanel.Size = new System.Drawing.Size(870, 448);
-            this.accountPanel.TabIndex = 6;
-            this.accountPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.accountPanel_Paint);
-            // 
-            // accountDataGridView
-            // 
-            this.accountDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.accountDataGridView.Location = new System.Drawing.Point(14, 47);
-            this.accountDataGridView.Name = "accountDataGridView";
-            this.accountDataGridView.Size = new System.Drawing.Size(854, 195);
-            this.accountDataGridView.TabIndex = 5;
-            this.accountDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.accountDataGridView_CellContentClick);
-            this.accountDataGridView.Click += new System.EventHandler(this.form);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(14, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Add Account";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.accountbuttonClick);
-            // 
             // mySqlCommandBuilder1
             // 
             this.mySqlCommandBuilder1.DataAdapter = null;
@@ -348,12 +348,12 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.accountPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.accountDataGridView)).EndInit();
             this.categoryPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.catDataGridView)).EndInit();
             this.productPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).EndInit();
-            this.accountPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.accountDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }

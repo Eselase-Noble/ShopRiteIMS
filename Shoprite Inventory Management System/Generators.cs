@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BarcodeLib;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace Shoprite_Inventory_Management_System
 {
@@ -52,6 +55,12 @@ namespace Shoprite_Inventory_Management_System
             }
 
             return new string(productPassword);
+        }
+
+
+        public void barcodeGerator()
+        {
+            Barcode barcodelib = new Barcode();
         }
     }
 }

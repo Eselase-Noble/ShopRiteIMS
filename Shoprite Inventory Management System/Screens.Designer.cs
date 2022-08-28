@@ -81,10 +81,10 @@
             // 
             // distextBox
             // 
-            this.distextBox.Location = new System.Drawing.Point(40, 134);
+            this.distextBox.Location = new System.Drawing.Point(40, 120);
             this.distextBox.Multiline = true;
             this.distextBox.Name = "distextBox";
-            this.distextBox.Size = new System.Drawing.Size(145, 56);
+            this.distextBox.Size = new System.Drawing.Size(145, 21);
             this.distextBox.TabIndex = 4;
             // 
             // label1
@@ -111,18 +111,19 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(268, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Unit Price";
+            this.label3.Text = "Selling Price";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(37, 110);
+            this.label4.Location = new System.Drawing.Point(37, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Description";
+            this.label4.Text = "Cost Price";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 

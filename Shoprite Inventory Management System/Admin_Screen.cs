@@ -181,20 +181,36 @@ namespace Shoprite_Inventory_Management_System
             productname.Width = 100;
             productDataGridView.Columns.Insert(1, productname);
 
-            DataGridViewTextBoxColumn productprice = new DataGridViewTextBoxColumn();
-            productprice.HeaderText = "Unit_Price";
-            productprice.Name = "Unit_Price";
-            productprice.DataPropertyName = "Unit_Price";
-            productprice.Width = 100;
-            productDataGridView.Columns.Insert(2, productprice);
-
-
             DataGridViewTextBoxColumn categoryid = new DataGridViewTextBoxColumn();
             categoryid.HeaderText = "Category_ID";
             categoryid.Name = "Category_ID";
             categoryid.DataPropertyName = "Category_ID";
             categoryid.Width = 100;
-            productDataGridView.Columns.Insert(3, categoryid);
+            productDataGridView.Columns.Insert(2, categoryid);
+
+            DataGridViewTextBoxColumn productprice = new DataGridViewTextBoxColumn();
+            productprice.HeaderText = "Selling_Price";
+            productprice.Name = "Selling_Price";
+            productprice.DataPropertyName = "Selling_Price";
+            productprice.Width = 100;
+            productDataGridView.Columns.Insert(3, productprice);
+
+
+            DataGridViewTextBoxColumn description = new DataGridViewTextBoxColumn();
+            description.HeaderText = "Cost_Price";
+            description.Name = "Cost_Price";
+            description.DataPropertyName = "Cost_Price";
+            description.Width = 100;
+            description.CellTemplate = new DataGridViewTextBoxCell();
+            productDataGridView.Columns.Insert(4, description);
+
+            DataGridViewTextBoxColumn qunatity = new DataGridViewTextBoxColumn();
+            qunatity.HeaderText = "Quantity";
+            qunatity.Name = "Quantity";
+            qunatity.DataPropertyName = "Quantity";
+            qunatity.Width = 100;
+            qunatity.CellTemplate = new DataGridViewTextBoxCell();
+            productDataGridView.Columns.Insert(5, qunatity);
 
 
             DataGridViewTextBoxColumn productCode = new DataGridViewTextBoxColumn();
@@ -203,32 +219,22 @@ namespace Shoprite_Inventory_Management_System
             productCode.DataPropertyName = "Product_Code";
             productCode.Width = 100;
             productCode.CellTemplate = new DataGridViewTextBoxCell();
-            productDataGridView.Columns.Insert(4, productCode);
+            productDataGridView.Columns.Insert(6, productCode);
 
+            DataGridViewTextBoxColumn categoryname = new DataGridViewTextBoxColumn();
+            categoryname.HeaderText= "PTotal_Sell";
+            categoryname.Name = "PTotal_Sell";
+            categoryname.DataPropertyName= "PTotal_Sell";
+            categoryname.Width = 100;
+            productDataGridView.Columns.Insert(7, categoryname);
 
-            DataGridViewTextBoxColumn description = new DataGridViewTextBoxColumn();
-            description.HeaderText = "Discription";
-            description.Name = "Discription";
-            description.DataPropertyName = "Discription";
-            description.Width = 100;
-            description.CellTemplate = new DataGridViewTextBoxCell();
-            productDataGridView.Columns.Insert(5, description);
-
-
-            DataGridViewTextBoxColumn qunatity = new DataGridViewTextBoxColumn();
-            qunatity.HeaderText = "Quantity";
-            qunatity.Name = "Quantity";
-            qunatity.DataPropertyName = "Quantity";
-            qunatity.Width = 100;
-            qunatity.CellTemplate = new DataGridViewTextBoxCell();
-            productDataGridView.Columns.Insert(6, qunatity);
-
-            //DataGridViewTextBoxColumn categoryname = new DataGridViewTextBoxColumn();
-            //categoryname.HeaderText= "Category_Name";
-            //categoryname.Name = "Category_Name";
-            //categoryname.DataPropertyName= "Category_Name";
-            //categoryname.Width = 100;
-            //productDataGridView.Columns.Insert(7, categoryname);
+            DataGridViewTextBoxColumn qunatity1 = new DataGridViewTextBoxColumn();
+            qunatity1.HeaderText = "PTotal_Cost";
+            qunatity1.Name = "PTotal_Cost";
+            qunatity1.DataPropertyName = "PTotal_Cost";
+            qunatity1.Width = 100;
+            qunatity1.CellTemplate = new DataGridViewTextBoxCell();
+            productDataGridView.Columns.Insert(8, qunatity1);
 
 
             //Bind the DataGridView.
@@ -257,7 +263,7 @@ namespace Shoprite_Inventory_Management_System
             buttonColumn.Name = "buttonColumn";
             buttonColumn.Text = "Delete";
             buttonColumn.UseColumnTextForButtonValue = true;
-            productDataGridView.Columns.Insert(7, buttonColumn);
+            productDataGridView.Columns.Insert(9, buttonColumn);
 
 
             //Add the Button Column.
@@ -267,7 +273,7 @@ namespace Shoprite_Inventory_Management_System
             updatebuttonColumn.Name = "updatebuttonColumn";
             updatebuttonColumn.Text = "update";
             updatebuttonColumn.UseColumnTextForButtonValue = true;
-            productDataGridView.Columns.Insert(8,updatebuttonColumn);
+            productDataGridView.Columns.Insert(10,updatebuttonColumn);
 
         }
 
@@ -751,7 +757,7 @@ namespace Shoprite_Inventory_Management_System
             //const String connection = "server = localhost; database=inventorysystem; uid=root; pwd=Eselase12/.;";
             MySqlConnection sqlConnection = new MySqlConnection(connectionString);
            // sqlConnection.Open();
-            if (e.ColumnIndex == 7)
+            if (e.ColumnIndex == 9)
             {
                 DataGridViewRow row = productDataGridView.Rows[e.RowIndex];
                 if (MessageBox.Show(string.Format("Do you want to delete Product ID: {0}?", row.Cells["Product_ID"].Value), "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -773,21 +779,21 @@ namespace Shoprite_Inventory_Management_System
             }
 
             
-            if (e.ColumnIndex == 8)
+            if (e.ColumnIndex == 10)
             {
                 DataGridViewRow row = productDataGridView.Rows[e.RowIndex];
                 if (MessageBox.Show(string.Format("Do you want to Update Product ID: {0}?", row.Cells["Product_ID"].Value), "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     using (sqlConnection)
                     {
-                        using (MySqlCommand cmd = new MySqlCommand($"UPDATE Product SET Product_Name =@Product_Name, Unit_Price=@Unit_Price," +
-                            $"Discription =@Discription, Quantity=@Quantity WHERE Product_ID=@Product_ID", sqlConnection))
+                        using (MySqlCommand cmd = new MySqlCommand($"UPDATE Product SET Product_Name =@Product_Name, Selling_Price=@Selling_Price," +
+                            $"Cost_Price =@Cost_Price, Quantity=@Quantity WHERE Product_ID=@Product_ID", sqlConnection))
                         {
                             cmd.CommandType = CommandType.Text;
                             cmd.Parameters.AddWithValue("@Product_ID", row.Cells["Product_ID"].Value);
                             cmd.Parameters.AddWithValue("@Product_Name", row.Cells["Product_Name"].Value);
-                            cmd.Parameters.AddWithValue("@Unit_Price", row.Cells["Unit_Price"].Value);
-                            cmd.Parameters.AddWithValue("@Discription", row.Cells["Discription"].Value);
+                            cmd.Parameters.AddWithValue("@Selling_Price", row.Cells["Selling_Price"].Value);
+                            cmd.Parameters.AddWithValue("@Cost_Price", row.Cells["Cost_Price"].Value);
                             cmd.Parameters.AddWithValue("@Quantity", row.Cells["Quantity"].Value);
                             sqlConnection.Open();
                             cmd.ExecuteNonQuery();
