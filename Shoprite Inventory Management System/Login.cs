@@ -70,6 +70,7 @@ namespace Shoprite_Inventory_Management_System
                     {
                         Attendant_Screen attendant = new Attendant_Screen();
                         attendant.Show();
+                        this.Hide();
                     }
                     else
                     {
@@ -89,6 +90,7 @@ namespace Shoprite_Inventory_Management_System
             {
                 MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
